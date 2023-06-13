@@ -14,8 +14,25 @@ class Nota {
         );
     }
 
-    mediaCA() {
-        return "SS";
+    mediaCA(media) {
+        if(mdeia >= 9){
+            return "SS";
+        }
+        if(mdeia >= 7 || media < 9){
+            return "MS";
+        }
+        if(mdeia >= 5 || media < 7){
+            return "MM";
+        }
+        if(mdeia >= 3 || media < 5){
+            return "MI";
+        }
+        if(mdeia >= 0,1 || media < 3){
+            return "II";
+        }
+        else{
+            return "SR"
+        }
     }
 }
 
